@@ -39,4 +39,5 @@ static_website/
 
 ---
 
-*A complete static website project ready for deployment! 🌟*
+live link: https://him4n-shu.github.io/elevate_labs_project_tasks
+
