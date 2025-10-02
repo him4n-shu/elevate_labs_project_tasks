@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data Fetch - JSONPlaceholder API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>User Directory</h1>
+            <p>Fetching user data from JSONPlaceholder API</p>
+            <button id="reload-btn" class="reload-btn">
+                <span class="reload-icon">🔄</span>
+                Reload Data
+            </button>
+        </header>
+        
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Loading user data...</p>
+        </div>
+        
+        <div id="error" class="error hidden">
+            <div class="error-icon">⚠️</div>
+            <h3>Oops! Something went wrong</h3>
+            <p id="error-message"></p>
+            <button id="retry-btn" class="retry-btn">Try Again</button>
+        </div>
+        
+        <div id="users-container" class="users-container">
+            <!-- User cards will be dynamically inserted here -->
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
